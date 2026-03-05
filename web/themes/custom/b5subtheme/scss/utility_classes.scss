@@ -1,0 +1,130 @@
+
+// Wrapping line for content fixed width start  
+
+/* Utility class */
+.u-wrapping-lines {
+  text-align: center;
+  margin: 0 0 1.5rem; /* space AFTER lines only */
+}
+
+/* Shared pseudo-element styles */
+.u-wrapping-lines::before,
+.u-wrapping-lines::after {
+  content: "";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $primary;
+}
+
+/* Top line */
+.u-wrapping-lines::before {
+  width: 60%;
+  max-width: 10rem;
+  height: 2px;
+}
+
+/* Bottom accent line — TOUCHING */
+.u-wrapping-lines::after {
+  width: 60%;
+  max-width: 10rem;
+  height: 2px;
+}
+
+/* Mobile tuning */
+@media (max-width: 576px) {
+  .u-wrapping-lines::before {
+    width: 80%;
+  }
+
+  .u-wrapping-lines::after {
+    width: 30%;
+  }
+}
+
+
+// Wrapping lines content fixed width end
+
+// Touching Lines one after other start
+
+/* Utility class */
+.u-heading-line {
+  text-align: center;
+  margin: 0 0 1.5rem;
+  line-height: 0;
+  font-size: 0;
+}
+
+/* Lines below text */
+.u-heading-line::before,
+.u-heading-line::after {
+  content: "";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $primary;
+}
+
+/* First (long) line */
+.u-heading-line::before {
+  width: 60%;
+  max-width: 12rem;
+  height: 2px;
+}
+
+/* Second (short) line – TOUCHING */
+.u-heading-line::after {
+  width: 20%;
+  max-width: 4rem;
+  height: 4px;
+}
+
+// Responsive Tuning
+
+@media (max-width: 576px) {
+  .u-heading-line::before {
+    width: 80%;
+  }
+
+  .u-heading-line::after {
+    width: 30%;
+  }
+}
+
+// Touching line end 
+
+// Adjustable wrapping lines start code
+
+.u-text-wrap-lines {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.u-text-wrap-lines::before,
+.u-text-wrap-lines::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $primary;
+}
+
+.u-text-wrap-lines::before {
+  margin-bottom: 0.25rem;
+}
+
+.u-text-wrap-lines::after {
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 576px) {
+  .u-text-wrap-lines {
+    font-size: 0.9em;
+  }
+}
+
+// Adjustable wrapping lines end
+

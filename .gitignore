@@ -1,0 +1,68 @@
+############################
+# OS / Editor junk
+############################
+.DS_Store
+Thumbs.db
+*.swp
+*~
+\#*\#
+
+############################
+# IDE directories
+############################
+.idea/
+.vscode/
+nbproject/
+
+############################
+# Composer-generated code
+############################
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+
+############################
+# Frontend dependencies
+############################
+/node_modules/
+
+############################
+# Drupal runtime files 
+# Modified to keept folder layout  
+############################
+/web/sites/*/files/*
+!/web/sites/*/files/.gitkeep
+/web/sites/*/private/
+
+############################
+# Environment-specific overrides
+############################
+/web/sites/*/settings.local.php
+/web/sites/*/services.local.yml
+/web/sites/*/settings.ddev.php
+
+############################
+# Logs & temp
+############################
+*.log
+tmp/
+tmp*
+
+############################
+# Patches / diffs
+############################
+*.patch
+*.diff
+*.orig
+*.rej
+interdiff*.txt
+
+############################
+# Windows
+############################
+*.lnk
+
+# DDEV local-only addons & generated files
+.ddev/addon-metadata/
+.ddev/docker-compose.phpmyadmin*.yaml

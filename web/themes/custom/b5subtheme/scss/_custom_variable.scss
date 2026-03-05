@@ -1,0 +1,32 @@
+$white: #ffffff;
+// Theme colors overide
+// Individual color variables (optional but recommended)
+$light: #f3f2ff;
+$dark: #14162b;
+$primary: #6a5acd;
+$secondary: #3a4472;
+$info: #8b7fc7;
+$success: #46b38a;
+$warning: #f2cc63;
+$danger: #d9657f;
+
+// Social Icons custom color
+
+$facebook-color: #1877F2;
+$twitter-color: #1DA1F2;
+$instagram-color: #E1306C;
+$youtube-color: #FF0000;
+$whatsapp-color: #25D366;
+$telegram-color: #2CA5E0;
+
+// Bootstrap theme color map override
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);

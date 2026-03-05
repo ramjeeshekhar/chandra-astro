@@ -1,0 +1,71 @@
+// webform vertical devider line
+
+@media (min-width: 992px) {
+  .border-lg-start {
+    border-left: 2px solid $primary;
+  }
+}
+
+
+// Insrtion of vertical lines in bottom section footer area
+@media (min-width: 992px) {
+  .footer-col {
+    position: relative;
+  }
+
+  .footer-col::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background: $secondary;
+  }
+
+  /* Only first column draws left edge */
+  .footer-col:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background: $secondary;
+  }
+}
+
+
+// background color for the section footer area
+
+$footer-top-bg: lighten($secondary, 8%);
+
+.section-footer {
+  background-color: $footer-top-bg;
+  color: $orange;
+  margin-top: 2rem;
+  padding-top: 1rem
+}
+
+// End of section area formatting
+
+// HEADING LINE - Top and Bottom Line 
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+.heading-line::after {
+    content: "";
+    width: 2rem;
+    padding-top: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: $primary;
+}
+

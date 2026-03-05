@@ -1,0 +1,16 @@
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overridden variables.
+// @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+@import 'custom_variable';
+
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style';
+
+@import 'custom_classes';
+@import 'media_custom.scss';
+@import 'ck5style_custom';
+@import 'utility_classes'

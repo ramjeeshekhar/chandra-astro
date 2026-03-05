@@ -1,0 +1,30 @@
+.text-facebook {
+    color: $facebook-color;
+}
+
+.text-twitter {
+    color: $twitter-color;
+}
+
+.text-instagram {
+    color: $instagram-color;
+}
+
+.text-youtube {
+    color: $youtube-color;
+}
+
+.text-whatsapp {
+    color: $whatsapp-color;
+}
+
+.text-telegram {
+    color: $telegram-color;
+}
+
+// css class only for svg image to strech full width
+
+.region-content .fullwidth-svg {
+  margin-left: calc(-1 * var(--bs-gutter-x, 0.5rem));
+  margin-right: calc(-1 * var(--bs-gutter-x, 0.5rem));
+}

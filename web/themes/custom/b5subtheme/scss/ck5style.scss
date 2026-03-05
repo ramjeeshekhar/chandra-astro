@@ -1,0 +1,6 @@
+// Include root of Bootstrap 5 theme.
+@import '../../../contrib/bootstrap5/scss/root.scss';
+
+.ck-content {
+  @import './style.scss';
+}
