@@ -90,7 +90,9 @@
  * ];
  * @endcode
  */
-
+/**
+ * Database for Server Hosting
+ */
 $databases['default']['default'] = [
   'driver' => 'mysql',
   'database' => getenv('DB_DATA'),
