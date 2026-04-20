@@ -41,7 +41,7 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 COPY . /var/www/html
 
 # === Install PHP dependencies ===
-RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts || true
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
 
 # === Create the Entrypoint Script ===
 # This script runs at container STARTUP to fix permissions on volumes.
@@ -62,7 +62,7 @@ fi
 
 # FIX PERMISSIONS: Ensure both www-data and r-pandey (group) can write
 echo "Setting group-writable permissions..."
-chown -R www-data:www-data /var/www/html/web/sites/default
+chown -R www-data:www-data /var/www/html/web/sites/default/files
 chmod -R 775 /var/www/html/web/sites/default/files
 
 echo "--- Drupal Startup: Complete ---"
