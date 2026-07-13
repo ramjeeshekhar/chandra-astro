@@ -70,8 +70,9 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-recipe-unpack": true,
+            "drupal/core-vendor-hardening": true,
             "php-http/discovery": true,
-            "drupal/core-vendor-hardening": true
+            "symfony/runtime": true
         },
         "bin-dir": "vendor/bin",
         "sort-packages": true,
