@@ -91,7 +91,7 @@
  * @endcode
  */
 /**
- * Database for Server Hosting
+ * Database for Server Hosting 
  */
 $databases['default']['default'] = [
   'driver' => 'mysql',
