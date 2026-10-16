@@ -1,8 +1,17 @@
 // webform vertical devider line
 
+// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .border-lg-start {
     border-left: 2px solid $primary;
+  }
+}
+
+// Profile Page Verticle devider line
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .border-md-start {
+    border-left: 3px solid orange;
   }
 }
 

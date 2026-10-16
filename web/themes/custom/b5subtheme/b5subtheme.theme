@@ -4,3 +4,49 @@
  * @file
  * B5 subtheme theme file.
  */
+ 
+
+/**
+ * Implements hook_preprocess_field().
+ */
+// function b5subtheme_preprocess_field(&$variables) {
+//   // 1. Target the correct field name found in your HTML
+//   if ($variables['field_name'] === 'field_profile_featured_image') {
+    
+//     // 2. Safely retrieve the node object (accounting for Layout Builder blocks)
+//     $node = null;
+//     if (isset($variables['element']['#object'])) {
+//       $node = $variables['element']['#object'];
+//     } elseif (isset($variables['element']['#parent_entity'])) {
+//       $node = $variables['element']['#parent_entity'];
+//     }
+
+//     // 3. Target the specific content type (profile_page)
+//     if ($node && $node->getEntityTypeId() === 'node' && $node->bundle() === 'profile_page') {
+//       foreach ($variables['items'] as &$item) {
+//         // Inject the class into the image layout structure
+//         $item['content']['#attributes']['class'][] = 'rounded-circle border border-2 border-primary';
+//       }
+//     }
+//   }
+// }
+
+
+// /**
+//  * Implements hook_preprocess_node(). This code hides the title in card mode
+//  */
+function b5subtheme_preprocess_node(&$variables) {
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = $variables['node'];
+  
+  // Target only the 'article' content type
+  if ($node->bundle() === 'profile_page') {
+    
+    // Target only the 'teaser' view mode
+    if ($variables['view_mode'] === 'card') {
+      
+      // Hide the label/title element inside the teaser template
+      $variables['label'] = ''; 
+    }
+  }
+}
